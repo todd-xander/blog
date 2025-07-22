@@ -1,4 +1,43 @@
 baseURL = '/'
 languageCode = 'zh'
 title = "Tao's Blog"
-theme = "PaperMod"
+theme = "hugo-zenHo"
+paginate = 6
+enableEmoji = true
+
+[params]
+    enableSummary = true
+    useDescriptionReplaceSummary = true
+    enableToc = false
+
+    author  = "zhangtao"
+    bio = "All good things come to thos who wait."
+
+    # baidu analytics
+    enableBaiduAnalytics = false
+    baiduAnalyticsToken = ""
+
+    googleSiteVerificationToken = ""
+
+    # social page url
+    github = "#"
+    twitter = "#"
+    facebook = "#"
+    email = ""
+
+    # utteranc comment
+    enableUtteranc = false
+    [params.utteranc]
+        repo="username/github-page-repository"
+        theme="github-light"
+        crossorigin="anonymous"
+        issueTerm="pathname"
+        label="Comment"
+
+[markup]
+  [markup.highlight]
+    style = "xcode"
+  [markup.tableOfContents]
+    endLevel = 2
+    ordered = false
+    startLevel = 2

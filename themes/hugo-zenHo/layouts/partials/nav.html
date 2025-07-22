@@ -1,0 +1,13 @@
+<nav class="nav-main" style="display: flex;">
+         <div style="margin-left:auto;">
+            {{ $url := replace .Permalink .Site.BaseURL "" }}
+            <a href='{{ .Site.BaseURL }}'> {{ with .Site.Params.home }}{{ . }}{{ else }}Home{{ end }}</a>
+            <a href='{{ .Site.BaseURL }}posts'>{{ with .Site.Params.archive }}{{ . }}{{ else }}Archive{{ end }}</a> 
+            <a href='{{ .Site.BaseURL }}tags'>{{ with .Site.Params.tags }}{{ . }}{{ else }}Tags{{ end }}</a> 
+            <a href='{{ .Site.BaseURL }}about'>{{ with .Site.Params.about }}{{ . }}{{ else }}About{{ end }}</a>
+   
+           {{ range $key, $val := .Site.Params.Links }}
+           <a href="{{ $val }}">{{ $key }}</a>
+           {{ end }}
+         </div>
+</nav>
