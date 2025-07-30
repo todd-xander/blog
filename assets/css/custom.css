@@ -1,0 +1,88 @@
+:root {
+    --baselineStretch: 1.1;
+    /* default contrast */
+    --ac-light: #36c;
+    --fg-light: #52525b;
+    --bg-light: #fff; 
+    --midtone: gray;
+    --fg-dark: #a1a1aa;
+    --bg-dark: #111;
+    --ac-dark: #fa0;
+    
+    /* less contrast */
+    --ac-light-less: var(--ac-light);
+    --fg-light-less: #13253d;
+    --bg-light-less: #e7e2e2; 
+    --midtone-less: #7d8490;
+    --fg-dark-less: #e7e2e2;
+    --bg-dark-less: #13253d;
+    --ac-dark-less: var(--ac-dark);
+
+    /* more contrast */
+    --ac-light-more: var(--ac-light);
+    --fg-light-more: #000;
+    --bg-light-more: #fff;
+    --midtone-more: gray;
+    --fg-dark-more: #fff;
+    --bg-dark-more: #000;
+    --ac-dark-more: var(--ac-dark);
+}
+
+html, body {
+    line-height: 1.5;
+    font-size: initial;
+}
+
+:lang(zh-CN) .rm {
+    font-family: var(--rm), LXGW WenKai Lite, sans-serif;
+}
+
+h5, h6 {
+    font-variant-caps: unset;
+}
+
+:lang(zh-CN) .letterine>i {
+    line-height: 4rem;
+    font-size: 3em;
+}
+
+.author>a::after {
+    font-size: .8em;
+    color: var(--mid);
+}
+
+#comments>*, .giscus {
+    width: inherit;
+}
+
+#main-article section>p {
+    margin: 1.75rem 0;
+}
+
+#main-footer {
+    background: var(--bg-dark);
+    color: var(--fg-dark);
+}
+
+code, pre>code {
+    font-family: var(--tt), LXGW Bright Code, monospace;
+}
+
+h6 {
+    padding: 0.9em .5em 0 0;
+}
+
+#content table {
+    width: var(--golden-ratio);
+}
+
+#content p img {
+    width: auto;
+    max-width: calc(100% - var(--indent));
+}
+
+@media print {
+    #main-footer a::after {
+        content: "";
+    }
+}

@@ -1,0 +1,45 @@
+[[main]]
+  name       = '博客'
+  identifier = 'post'
+  pageRef    = '/post'
+  weight     = 1
+
+[[main]]
+  name       = '标签'
+  identifier = 'tags'
+  pageRef    = '/tags'
+  weight     = 3
+
+[[main]]
+  name       = '关于'
+  identifier = 'about'
+  pageRef    = '/author/zhang-tao'
+  weight     = 4
+
+[[main]]
+  name       = ''
+  identifier = 'github'
+  url        = 'https://github.com/todd-xander/'
+  weight     = 5
+  pre        = 'github'
+
+[[footer]]
+  identifier = 'github'
+  url        = 'https://github.com/todd-xander/'
+  weight     = 1
+  name       = 'Github'
+  pre        = 'github'
+
+[[footer]]
+  identifier = 'email'
+  url        = 'mailto:tod.xander@gmail.com'
+  weight     = 2
+  name       = 'Email'
+  pre        = 'email'
+
+[[footer]]
+  identifier = 'rss'
+  url        = '/index.xml'
+  weight     = 3
+  name       = 'RSS'
+  pre        = 'rss'

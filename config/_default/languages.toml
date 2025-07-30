@@ -1,0 +1,28 @@
+[en]
+    contentDir = 'content/en'
+    disabled = false
+    languageCode = 'en-GB'
+    languageDirection = 'ltr'
+    languageName = 'English'
+    [en.pagination]
+        disableAliases = false
+        pagerSize = 12
+        path = 'page'
+
+[zh-Hans]
+    contentDir = 'content/zh-Hans'
+    disabled = false
+    languageCode = 'zh-CN'
+    languageDirection = 'ltr'
+    languageName = '中文'
+    [zh-Hans.pagination]
+        disableAliases = false
+        pagerSize = 2
+        path = 'page'
+
+[it]
+    contentDir = 'content/it'
+    disabled = false
+    languageCode = 'it-IT'
+    languageDirection = 'ltr'
+    languageName = 'Italian'

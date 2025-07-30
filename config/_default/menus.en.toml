@@ -1,0 +1,45 @@
+[[main]]
+  name       = 'Post'
+  identifier = 'post'
+  pageRef    = '/post'
+  weight     = 1
+
+[[main]]
+  name       = 'Tags'
+  identifier = 'tags'
+  pageRef    = '/tags'
+  weight     = 3
+
+[[main]]
+  name       = 'About'
+  identifier = 'about'
+  pageRef    = '/author/zhang-tao'
+  weight     = 4
+
+[[main]]
+  name       = ''
+  identifier = 'github'
+  url        = 'https://github.com/todd-xander/'
+  weight     = 5
+  pre        = 'github'
+
+[[footer]]
+  identifier = 'github'
+  url        = 'https://github.com/todd-xander/'
+  weight     = 1
+  name       = 'Github'
+  pre        = 'github'
+
+[[footer]]
+  identifier = 'email'
+  pageRef    = '/'
+  weight     = 2
+  name       = 'Email'
+  pre        = 'email'
+
+[[footer]]
+  identifier = 'rss'
+  pageRef    = '/'
+  weight     = 3
+  name       = 'RSS'
+  pre        = 'rss'

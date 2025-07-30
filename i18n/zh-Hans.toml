@@ -1,0 +1,251 @@
+# Please feel free to contribute to additional translation.
+# Copy this file and rename it to your language code.
+# Then translate the values.
+[404PageNotFound]
+    other = "页面不存在"
+[404Alert]
+    other = "即将重定向"
+[404ReturnHome]
+    other = "返回至主页"
+[accessibility]
+    other = "无障碍优化"
+[accessTime]
+    other = "本次访问于"
+[allPosts]
+    other = "全部文章"
+[appearance]
+    other = "外观"
+[articles]
+    one = "文章"
+    other = "文章"
+[author]
+    one = "作者"
+    other = "作者"
+[back]
+    other = "返回"
+[baselineStretch]
+    other = "行间距"
+[bionRead]
+    other = "BionRead 模式"
+[breadcrumb]
+    other = "面包屑"
+[buildTime]
+    other = "页面创建于"
+[bypass]
+    other = "直达"
+[categories]
+    one = "分类"
+    other = "分类"
+[close]
+    other = "关闭"
+[coffeeStat]
+    other = "Coffee Stat"
+[coffeeCount]
+    other = "投入 ❤️ 与 "
+[coffeeCountPost]
+    other = "创作而成。"
+[colophon]
+    other = "版权信息"
+[colorPalette]
+    other = "调色盘"
+[colorSettings]
+    other = "颜色设置"
+[comments]
+    other = "评论"
+[contrast]
+    other = "对比度"
+[contrib]
+    other = "支持"
+[contribAskReader]
+    other = "喜欢这篇文章？"
+[contribAskReaderResponse]
+    other = "太棒了！"
+[contribAskReaderToContribute]
+    one = "你也可以通过以下方式支持我们："
+    other = "你也可以通过以下方式支持我们："
+[contribCoffeeStat]
+    other = "你知道吗？"
+[contribCoffeeStatPost]
+    one =  "帮助我完成了这篇文章。"
+    other = "帮助我们完成了这篇文章。"
+[copy]
+    other = "复制链接"
+[copying]
+    other = "正在复制..."
+[ctaComments]
+    other = "参与讨论"
+[cup]
+    one = "杯咖啡"
+    other = "杯咖啡"
+[currentLang]
+    other = "当前语言为"
+[dark]
+    other = "暗色"
+[darkMode]
+    other = "暗色模式"
+[date_long]
+    other = "January 2, 2006"
+[defaultColor]
+    other = "默认"
+[defaultContrast]
+    other = "默认"
+[deuteranopia]
+    other = "绿色盲"
+[discover]
+    other = "话题推荐"
+[editedBy]
+    other = "修订"
+[email]
+    other = "Email"
+[featuredImg]
+    other = "标题图片"
+[fediverseBluesky]
+    other = "使用 bluesky 评论"
+[fediverseErr]
+    other = "加载评论错误"
+[fediverseIsLoading]
+    other = "正在从 Fediverse 加载评论"
+[fediverseReplies]
+    one = "评论"
+    other = "评论"
+[fediverseReblogs]
+    one = "转发"
+    other = "转发"
+[fediverseFavourites]
+    one = "收藏"
+    other = "收藏"
+[focusMode]
+    other = "专注模式"
+[followRSS]
+    other = "订阅 RSS"
+[fontSize]
+    other = "字体大小"
+[home]
+    other = "主页"
+[in]
+    other = "-"
+[inNewTab]
+    other = "从新标签页"
+[keepInTouch]
+    other = "让我们保持联络!"
+[lessContrast]
+    other = "低"
+[light]
+    other = "亮色"
+[main]
+    other = "主菜单"
+[marginpar]
+    other = "附加备注"
+[menuControls]
+    other = "可读性优化菜单"
+[modified]
+    other = "修订"
+[monochrome]
+    other = "单色"
+[more]
+    other = "更多"
+[moreContrast]
+    other = "高"
+[nav]
+    other = "导航"
+[networkGraph]
+    other = "内容网络图"
+[next]
+    other = "下一页"
+[noArticle]
+    other = "无文章"
+[noArticlePost]
+    other = "作者跑去喝咖啡了... 别担心，我们会很快更新内容！"
+[noComment]
+    other = "无评论"
+[noGiscus]
+    other = "启用 Giscus 需要 Javascript 和 LocalStorage 功能启用。"
+[noScript]
+    other = "Uh-oh... Javascript 禁用了！"
+[noLocalStorage]
+    other = "你的浏览器 LocalStorage 不可用，设置无法保存。"
+[note]
+    other = "备注"
+[on]
+    other = "于"
+[OpenDyslexic]
+    other = "使用 OpenDyslexic 字体"
+[optimizeSR]
+    other = "屏幕阅读器优化"
+[optimizeSRDesc]
+    other = "为使用触屏设备的屏幕阅读器用户优化显示和资源。"
+[pages]
+    one = "页"
+    other = "页"
+[pagination]
+    other = "分页"
+[posts]
+    one = "篇文章"
+    other = "篇文章"
+[postsBy]
+    other = "文章作者"
+[postsOn]
+    other = "文章分类"
+[poweredBy]
+    other = "技术支持"
+[prev]
+    other = "上一页"
+[print]
+    other = "打印"
+[protanopia]
+    other = "红色盲"
+[published]
+    other = "发布"
+[readingTime]
+    other = "分钟阅读时长"
+[recent]
+    other = "近期文章"
+[redactionHistory]
+    other = "修订历史"
+[redactionNotes]
+    other = "部分信息可能会随时间改变，我们会保持更新。"
+[related]
+    other = "你可能还喜欢"
+[reset]
+    other = "重置"
+[reviewedBy]
+    other = "审阅"
+[save]
+    other = "保存"
+[search]
+    other = "搜索"
+[seeAll]
+    other = "查看全部"
+[seeMore]
+    other = "探索更多话题"
+[section]
+    other = "分区"
+[selectLang]
+    other = "语言选择"
+[series]
+    other = "系列"
+[share]
+    other = "分享"
+[shareOn]
+    other = "分享到"
+[slide]
+    one = "幻灯片"
+    other = "幻灯片"
+[stage]
+    one = "数字花园"
+    other = "数字花园"
+[switchLangTo]
+    other = "切换语言"
+[TableOfContents]
+    other = "目录"
+[tags]
+    one = "标签"
+    other = "标签"
+[toContent]
+    other = "跳转至正文"
+[toTop]
+    other = "返回顶部"
+[top-nav]
+    other = "顶部"
+[tritanopia]
+    other = "蓝黄色盲"
