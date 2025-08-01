@@ -15,7 +15,6 @@ history = [
   {date = "2025-02-02", stage="budding", author = "Zhang Tao", editor = "Editor Name", note = "Addendum (example)"},
   {date = "2025-02-03", stage="evergreen", note = "Errata (example)"},
 ]
-toot = "https://infosec.exchange/@foxx/113979609651534969"
 +++
 
 The redaction history functionality enables you to track and communicate content modifications to readers. 

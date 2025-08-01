@@ -9,7 +9,6 @@ translationKey: markdown
 coffee: 1
 tags: ['markdown']
 categories: ['test']
-comments: false
 ---
 
 <span class="letterine"><i>这</i>是一个首字下沉的示例。</span>

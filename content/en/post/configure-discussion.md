@@ -10,8 +10,6 @@ translationKey: discussion
 coffee: 1
 tags: ['configuration', 'discussion']
 categories: ['configuration']
-toot: "https://infosec.exchange/@foxx/113979609651534969"
-bsky: "https://bsky.app/profile/808.foxx.ink/post/3lknem6ci2s2h"
 ---
 
 ## Configure Giscus Comments

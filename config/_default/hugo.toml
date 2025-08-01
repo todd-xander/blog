@@ -223,7 +223,7 @@ enableRobotsTXT = true
         ## Sans-serif font selection
         sans = 'inter'
         ## use typeface stored in local server (pleaase download font's uri first)
-        localHost = false
+        localHost = true
 
     ## Extended Metadata and  Social card configuration
     [params.socialCard]

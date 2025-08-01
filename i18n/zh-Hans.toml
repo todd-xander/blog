@@ -175,8 +175,8 @@
 [optimizeSRDesc]
     other = "为使用触屏设备的屏幕阅读器用户优化显示和资源。"
 [pages]
-    one = "页"
-    other = "页"
+    one = "§"
+    other = "§"
 [pagination]
     other = "分页"
 [posts]

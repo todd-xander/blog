@@ -41,6 +41,17 @@ h5, h6 {
     font-variant-caps: unset;
 }
 
+blockquote {
+    margin: 0;
+    padding: 1pt var(--indent);
+    width: auto;
+}
+
+pre>code {
+    padding: 1ex 0;
+    width: 100%;
+}
+
 :lang(zh-CN) .letterine>i {
     line-height: 4rem;
     font-size: 3em;
@@ -49,6 +60,19 @@ h5, h6 {
 .author>a::after {
     font-size: .8em;
     color: var(--mid);
+}
+
+.chroma .lntable {
+    width: 100%;
+    display: inline-table;
+}
+
+#content > * {
+    max-width: var(--golden-ratio);
+}
+
+#content table {
+    width: 100% !important;
 }
 
 #comments>*, .giscus {
@@ -64,12 +88,75 @@ h5, h6 {
     color: var(--fg-dark);
 }
 
+#main-footer>div {
+    display: flex;
+    flex-flow: wrap;
+}
+
+#main-footer-primary {
+    margin-top: 0.618pc;
+    line-height: 2;
+    flex-grow: 100;
+}
+
+#main-footer-secondary {
+    margin-top: 0.618pc;
+    width: fit-content;
+    place-self: self-end;
+    flex-grow: 1;
+}
+
+@media only screen and (max-width: 540px) {
+    #main-footer-secondary {
+        width: auto;
+        place-self: initial;
+    }
+}
+
 code, pre>code {
     font-family: var(--tt), LXGW Bright Code, monospace;
 }
 
 h6 {
     padding: 0.9em .5em 0 0;
+}
+
+:root {
+    --golden-ratio: 75%;
+    --marginparwidth: 18vw;
+}
+
+@media only screen and (max-width: 640px) {
+    :root {
+        --golden-ratio: 100%;
+        --marginparwidth: 100% !important;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    :root {
+        --golden-ratio: 75%;
+        --void: calc((100vw - var(--max-width) - 1rem) / 2) !important;
+        --marginparwidth: calc(var(--max-width) * 0.25) !important;
+    }
+}
+
+@media print {
+    .marginpar {
+        right: 0;
+        width: var(--marginparwidth);
+    }
+    .marginpar.abs {
+        right: 0;
+        width: var(--marginparwidth);
+    }
+    #contentinfo {
+        display: none;
+    }
+}
+
+.marginpar {
+    left: var(--marginparwidth);
 }
 
 #content table {
@@ -79,6 +166,15 @@ h6 {
 #content p img {
     width: auto;
     max-width: calc(100% - var(--indent));
+}
+
+.giscus {
+    padding: var(--bigskip) var(--medskip);
+    border-top: var(--bound);
+}
+
+body.focus .giscus {
+    display: none;
 }
 
 @media print {
