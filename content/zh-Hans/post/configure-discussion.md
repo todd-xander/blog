@@ -1,5 +1,5 @@
 ---
-author : ['Zhang Tao']
+author : ['Xander Zhang']
 title: "Configure Discussion"
 description: "How to configure post discussion in Hugo Brewm theme"
 date: 2025-01-26
@@ -7,7 +7,6 @@ lastmod: 2025-02-10
 type: post
 draft: false
 translationKey: discussion
-coffee: 1
 tags: ['configuration', 'discussion']
 categories: ['configuration']
 ---

@@ -1,12 +1,11 @@
 ---
-author : ['Zhang Tao']
+author : ['Xander Zhang']
 title: "Configure Pagefind"
 description: "How to configure Pagefind in Hugo Brewm theme"
 date: 2025-01-26
 type: post
 draft: false
 translationKey: pagefind
-coffee: 1
 tags: ['configuration', 'pagefind']
 categories: ['configuration']
 ---

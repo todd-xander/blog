@@ -1,12 +1,11 @@
 ---
-author : ['Zhang Tao']
+author : ['Xander Zhang']
 title: "Authoring Terms Entry"
 description: "How to set the cover and linking of terms entry in Hugo Brewm theme"
 date: 2025-02-03
 type: post
 draft: false
 translationKey: terms
-coffee: 1
 tags: ['authoring', 'cover', 'taxonomy', 'terms']
 categories: ['authoring']
 stage: [seedling]

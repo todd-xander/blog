@@ -1,12 +1,10 @@
 ---
-author : ['Zhang Tao']
-title: "Markdown Test"
+author : ['Xander Zhang']
+title: "Markdown 测试"
 description: "Various sample Markdown test"
 date: 2025-01-26
 type: post
-draft: false
 translationKey: markdown
-coffee: 1
 tags: ['markdown']
 categories: ['test']
 ---

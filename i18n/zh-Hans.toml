@@ -183,7 +183,7 @@
     one = "篇文章"
     other = "篇文章"
 [postsBy]
-    other = "文章作者"
+    other = "作者文章"
 [postsOn]
     other = "文章分类"
 [poweredBy]

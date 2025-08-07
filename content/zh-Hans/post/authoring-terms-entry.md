@@ -1,5 +1,5 @@
 ---
-author : ['Zhang Tao']
+author : ['Xander Zhang']
 title: "Authoring Terms Entry"
 description: "How to set the cover and linking of terms entry in Hugo Brewm theme"
 date: 2025-02-03
@@ -7,10 +7,10 @@ lastmod: 2025-02-10
 type: post
 draft: false
 translationKey: terms
-coffee: 1
 tags: ['authoring', 'cover', 'taxonomy', 'terms']
 categories: ['authoring']
 stage: [seedling]
+audio: "audio/my-audio.ogg"
 ---
 
 You can change the cover of each terms entry by adding the `cover` parameter in `_index.md` under `[lang]\[taxonomies]\[terms]\`.

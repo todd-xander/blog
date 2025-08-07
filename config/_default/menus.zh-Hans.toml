@@ -13,7 +13,7 @@
 [[main]]
   name       = '关于'
   identifier = 'about'
-  pageRef    = '/author/zhang-tao'
+  pageRef    = '/author/xander-zhang'
   weight     = 4
 
 [[main]]
@@ -22,6 +22,27 @@
   url        = 'https://github.com/todd-xander/'
   weight     = 5
   pre        = 'github'
+
+[[xander-zhang]]
+  identifier = 'github'
+  url        = 'https://github.com/todd-xander/'
+  weight     = 1
+  name       = ''
+  pre        = 'github'
+
+[[xander-zhang]]
+  identifier = 'email'
+  url        = 'mailto:tod.xander@gmail.com'
+  weight     = 2
+  name       = ''
+  pre        = 'email'
+
+[[xander-zhang]]
+  identifier = 'rss'
+  url        = '/index.xml'
+  weight     = 3
+  name       = ''
+  pre        = 'rss'
 
 [[footer]]
   identifier = 'github'

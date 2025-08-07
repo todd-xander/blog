@@ -1,7 +1,7 @@
 ## Base URL for the site
 baseURL = '/'
 ## Site title
-title = "Tao's Talk"
+title = "Xander Zhang"
 ## Use hugo-brewm theme
 theme = 'hugo-brewm'
 ## Enable Git information for pages, (e.g. lastMod date information)
@@ -22,15 +22,6 @@ ignoreFiles = [ '\.redacted', '\.old','\.bak', '\.tmp', '\.swp', '\.DS_Store']
 # ignoreLogs = ['err-youtube-remote']
 ## Generate a robots.txt
 enableRobotsTXT = true
-
-## Front matter field configurations
-[frontmatter]
-    ## Publication date fields
-    date = [':default']
-    ## Expiry date fields
-    expiryDate = ['expiryDate', 'unpublishdate', ':default']
-    ## Last modified date fields
-    lastmod = ['lastmod', ':default'] ## ":fileModTime"
 
 ## Markup configuration
 [markup]
@@ -100,11 +91,11 @@ enableRobotsTXT = true
 ## Site parameters
 [params]
     ## Site title
-    title = "Tao's Blog"
+    title = "Xander Zhang"
     ## Site description
-    description = "Zhang Tao 的个人博客"
+    description = "Xander Zhang's Blog"
     ## Copyright notice
-    copyright = "Copyleft 2025 &copy; Zhang Tao"
+    copyright = "Copyleft 2025 &copy; Xander Zhang"
     ## Hide "powered by hugo" on colophon
     HideHugoCredit = true
     ## Enable extended metadata (social cards)
@@ -112,7 +103,7 @@ enableRobotsTXT = true
     ## Enable coffee metric
     coffeeStat = false
     ## Default social card image, recommended resolution: 1200 x 630px
-    # images = "example.com/img/social-share.jpg" 
+    # images = "example.com/img/social-share.jpg"
     ## Do not block AI user agent for robot.txt
     AllowAIRobots = false
     ## or BearMode--Minimize clutter for small site; Disable breadcrumbs menu, share button, related posts, colophon and redaction history.
@@ -123,7 +114,7 @@ enableRobotsTXT = true
     ## Author information
     [params.author]
         ## site author's name
-        name = 'Zhang Tao'
+        name = 'Xander Zhang'
         ## Author's email (will be used for RSS feed)
         email = 'tod.xander@gmail.com'
         ## Co-authors information (optional)
@@ -173,10 +164,10 @@ enableRobotsTXT = true
     ## Feed display settings
     [params.feed]
         ## Enable flowlines
-        flowlines = true
+        flowlines = false
         ## Limit number of flowlines
         flowlinesLimit = 21
-    
+
     ## Home page display settings
     [params.home]
         ## Enable slide carousel
@@ -197,13 +188,13 @@ enableRobotsTXT = true
         ## Use sans-serif fonts as default
         sfdefault = false
         ## Show colophon section (including QR code)
-        colophon = false
+        colophon = true
         ## disable redaction history
         disableHistory = false
         ## SHow related content
         related = true
         ## Show share buttons
-        share = false
+        share = true
 
     ## Search configuration
     [params.search]

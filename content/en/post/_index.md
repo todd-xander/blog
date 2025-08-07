@@ -2,7 +2,7 @@
 title: "Post"
 translationKey: post
 sitemap:
-    changeFreq: "always"
+    changeFreq: "daily"
 ---
 
 This section demonstrates a list view layout.

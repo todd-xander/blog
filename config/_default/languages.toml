@@ -17,7 +17,7 @@
     languageName = '中文'
     [zh-Hans.pagination]
         disableAliases = false
-        pagerSize = 2
+        pagerSize = 4
         path = 'page'
 
 [it]

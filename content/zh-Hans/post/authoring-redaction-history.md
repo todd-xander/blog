@@ -1,18 +1,17 @@
 +++
-author = ["Zhang Tao"]
+author = ["Xander Zhang"]
 title = "Authoring The Redaction History"
 description = "How to set up the redaction history in Hugo Brewm theme"
 date = "2025-02-03"
 type = "post"
 draft = false
 translationKey = "history"
-coffee = 1
 tags = ["authoring", "redaction", "history"]
 categories = ["authoring"]
 stage = "evergreen"
 history = [
-  {date = "2025-02-01", stage="seedling", author = "Zhang Tao", reviewer = "Reviewer Name", note = "Example"},
-  {date = "2025-02-02", stage="budding", author = "Zhang Tao", editor = "Editor Name", note = "Addendum (example)"},
+  {date = "2025-02-01", stage="seedling", author = "Xander Zhang", reviewer = "Reviewer Name", note = "Example"},
+  {date = "2025-02-02", stage="budding", author = "Xander Zhang", editor = "Editor Name", note = "Addendum (example)"},
   {date = "2025-02-03", stage="evergreen", note = "Errata (example)"},
 ]
 +++
@@ -25,8 +24,8 @@ This feature requires manual configuration in the post's front matter section.
 +++
 title = "Authoring The Redaction History"
 history = [
-    {date = "2025-02-01", author = "Zhang Tao", reviewer = "Reviewer Name", note = "Example"},
-    {date = "2025-02-02", author = "Zhang Tao", editor = "Editor Name", note = "Addendum (example)"},
+    {date = "2025-02-01", author = "Xander Zhang", reviewer = "Reviewer Name", note = "Example"},
+    {date = "2025-02-02", author = "Xander Zhang", editor = "Editor Name", note = "Addendum (example)"},
     {date = "2025-02-03", note = "Errata (example)"},
     ]
 +++

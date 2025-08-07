@@ -13,7 +13,7 @@
 [[main]]
   name       = 'About'
   identifier = 'about'
-  pageRef    = '/author/zhang-tao'
+  pageRef    = '/author/xander-zhang'
   weight     = 4
 
 [[main]]

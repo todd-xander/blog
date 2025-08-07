@@ -1,8 +1,8 @@
 ---
-title: "Post"
+title: "博客"
 translationKey: post
 sitemap:
-    changeFreq: "always"
+    changeFreq: "monthly"
 ---
 
 This section demonstrates a list view layout.

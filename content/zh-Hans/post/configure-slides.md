@@ -1,12 +1,11 @@
 ---
-author : ['Zhang Tao']
+author : ['Xander Zhang']
 title: "Configure Homepage Slides"
 description: "How to configure Homepage Slides section in Hugo Brewm theme"
 date: 2025-01-26
 type: post
 draft: false
 translationKey: slide
-coffee: 1
 tags: ['configuration', 'slide']
 categories: ['homepage']
 ---
