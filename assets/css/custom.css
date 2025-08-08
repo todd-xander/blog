@@ -61,9 +61,8 @@ code, pre>code {
     font-size: 3em;
 }
 
-.chroma .lntable {
+.chroma .lntd:last-child {
     width: 100%;
-    display: inline-table;
 }
 
 #has-pagination {
@@ -86,16 +85,33 @@ code, pre>code {
 .column--multicols {
     display: flex;
     flex-flow: wrap;
+    gap: var(--vfoot);
+}
+
+#main-footer  {
+    padding: 1.618rem var(--vfoot);
 }
 
 #main-footer-primary {
-    margin-top: 1.618rem;
-    flex-grow: 200;
+    flex-grow: 1;
     line-height: 2;
 }
 
 #main-footer-secondary {
     flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+    gap: var(--vfoot);
+}
+
+div+#menu-footer, .column>div+div, .column__item+.column__item {
+    margin-top: 0;
+}
+
+#menu-footer, div+#menu-footer {
+    flex-grow: 1;
+    text-align: center;
 }
 
 :root {
@@ -105,10 +121,6 @@ code, pre>code {
 
 .marginpar {
     left: var(--marginparwidth);
-}
-
-#content table {
-    width: var(--golden-ratio);
 }
 
 #content p img {
@@ -121,15 +133,15 @@ code, pre>code {
 }
 
 #qr {
-    padding: 0;
+    padding: 2px;
     display: flex;
-    border-radius: 2px;
+    border-radius: 8px;
     border: var(--border);
 }
 
 .verbose {
     font: var(--sf), sans-serif;
-    font-size: 0.95em;
+    font-size: 0.85em;
     user-select: none;
 }
 
@@ -171,7 +183,6 @@ body.focus .giscus {
     display: none;
 }
 
-
 @media only screen and (max-width: 640px) {
     :root {
         --golden-ratio: 100%;
@@ -187,6 +198,20 @@ body.focus .giscus {
         margin: 0 auto;
     }
 
+    .marginpar-ctrl+label::before {
+        cursor: pointer;
+    }
+
+    .marginpar-ctrl:checked+label+.marginpar {
+        margin: 0.5em 0;
+        padding: 1em 0 1em var(--indent);
+        background-color: var(--g18s);
+        border-radius: 6px;
+    }
+
+    #main-footer {
+        padding: 1.618rem;
+    }
     .giscus {
         padding: var(--bigskip) 0;
         

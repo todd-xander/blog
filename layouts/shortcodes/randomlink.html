@@ -1,0 +1,22 @@
+{{/* layouts/shortcodes/randomlink.html */}}
+<a id="randomBtn" href="#">
+  {{ .Get 0 | default "feelingLucky" }}
+</a>
+<script>
+(function(){
+  const btn = document.getElementById("randomBtn");
+  if (!btn) return;
+  btn.addEventListener("click", function(){
+    fetch('/index.json')
+      .then(res => res.json())
+      .then(pages => {
+        const list = Array.isArray(pages) ? pages : pages.nodes || [];
+        if (!list.length) return alert("没有找到文章");
+        const page = list[Math.floor(Math.random() * list.length)];
+        const url = page.permalink || page;
+        window.location.href = url;
+      })
+      .catch(err => console.error(err));
+  });
+})();
+</script>

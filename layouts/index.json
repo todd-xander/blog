@@ -1,0 +1,68 @@
+{{- /* layouts/index.json - 生成 nodes/links 的 JSON，使用 jsonify 以避免语法错误 */ -}}
+{{- $excludedTaxonomy := slice "author" "stage" -}}
+
+{{- /* 收集 posts (type 为 post 或 articles) */ -}}
+{{- $posts := slice -}}
+{{- range .Site.RegularPages -}}
+  {{- if or (eq .Type "post") (eq .Type "articles") -}}
+    {{- $posts = $posts | append . -}}
+  {{- end -}}
+{{- end -}}
+
+{{- /* 构建 nodes */ -}}
+{{- $nodes := slice -}}
+{{- range $i, $p := $posts -}}
+  {{- $nodes = $nodes | append (dict "id" $p.File.UniqueID "title" $p.Title "permalink" $p.Permalink "type" "post") -}}
+{{- end -}}
+
+{{- if site.Params.home.includeSectionInJson -}}
+  {{- range .Site.Sections -}}
+    {{- $nodes = $nodes | append (dict "id" (print "section-" (anchorize .Title)) "title" .Title "permalink" .Permalink "type" "section") -}}
+  {{- end -}}
+{{- end -}}
+
+{{- /* taxonomy 节点（排除特定 taxonomy） */ -}}
+{{- range $name, $tax := .Site.Taxonomies -}}
+  {{- if not (in $excludedTaxonomy $name) -}}
+    {{- range $term := $tax -}}
+      {{- with $term.Page -}}
+        {{- $nodes = $nodes | append (dict "id" (print $name "-" (anchorize .Title)) "title" .Title "permalink" .Permalink "type" $name) -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- /* 构建 links */ -}}
+{{- $links := slice -}}
+
+{{- /* post -> taxonomy links */ -}}
+{{- range $i, $p := $posts -}}
+  {{- $source := $p.File.UniqueID -}}
+  {{- range $name, $tax := .Site.Taxonomies -}}
+    {{- if not (in $excludedTaxonomy $name) -}}
+      {{- $terms := $p.GetTerms $name -}}
+      {{- if $terms -}}
+        {{- range $t := $terms -}}
+          {{- with $t.Page -}}
+            {{- $links = $links | append (dict "source" $source "target" (print $name "-" (anchorize .Title))) -}}
+          {{- end -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- /* section -> post links (如果启用) */ -}}
+{{- if site.Params.home.includeSectionInJson -}}
+  {{- range .Site.Sections -}}
+    {{- $secID := print "section-" (anchorize .Title) -}}
+    {{- range .RegularPages -}}
+      {{- if or (eq .Type "post") (eq .Type "articles") -}}
+        {{- $links = $links | append (dict "source" $secID "target" .File.UniqueID) -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- /* 最终输出：jsonify 会处理所有转义与逗号 */ -}}
+{{- dict "nodes" $nodes "links" $links | jsonify -}}
