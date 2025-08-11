@@ -6,6 +6,7 @@ type = "post"
 draft = false
 tags = ["authoring", "taxonomy"]
 categories = ["authoring"]
+series = ["author"]
 stage = "evergreen"
 history = [
   {date = "2025-07-26", stage="seedling"},

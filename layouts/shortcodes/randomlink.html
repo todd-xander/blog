@@ -1,6 +1,10 @@
-{{/* layouts/shortcodes/randomlink.html */}}
-<a id="randomBtn" href="#">
-  {{ .Get 0 | default "feelingLucky" }}
+{{- $text := .Get "text" }}
+{{- $tip := .Get "tip" }}
+{{- $pre := .Get "pre" }}
+<a id="randomBtn" href="#" style="position: relative; display: inline-flex; align-items: center; gap: var(--smallskip); text-decoration: none; color: inherit;">
+  {{- if $pre }}<i class="icon sri">{{ $pre }}</i>{{- end }}
+  {{ $text | default "Feeling lucky" }}
+  <span class="t" role="tooltip" style="--tsf: 0; width: -webkit-fill-available;">{{ or $tip $text | default "Feeling lucky" }}</span>
 </a>
 <script>
 (function(){
@@ -10,7 +14,7 @@
     fetch('/index.json')
       .then(res => res.json())
       .then(pages => {
-        const list = Array.isArray(pages) ? pages : pages.nodes || [];
+        const list = Array.isArray(pages) ? pages : pages.nodes.filter((n)=>n.type === "post") || [];
         if (!list.length) return alert("没有找到文章");
         const page = list[Math.floor(Math.random() * list.length)];
         const url = page.permalink || page;

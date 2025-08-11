@@ -65,6 +65,10 @@ code, pre>code {
     width: 100%;
 }
 
+.list-month>summary {
+    list-style: revert;
+}
+
 #has-pagination {
     width: var(--golden-ratio);
     margin-top: 1in;

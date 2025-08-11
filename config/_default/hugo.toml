@@ -167,6 +167,10 @@ enableRobotsTXT = true
         flowlines = false
         ## Limit number of flowlines
         flowlinesLimit = 21
+        ## Overide Flowlines illustration
+        OverrideFlowlinesDir = '/svg/flowlines/'
+        ## Illustration extension on overiding flowlines
+        flowlinesExt = 'svg'
 
     ## Home page display settings
     [params.home]

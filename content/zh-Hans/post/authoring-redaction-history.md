@@ -8,6 +8,7 @@ draft = false
 translationKey = "history"
 tags = ["authoring", "redaction", "history"]
 categories = ["authoring"]
+series = ["author"]
 stage = "evergreen"
 history = [
   {date = "2025-02-01", stage="seedling", author = "Xander Zhang", reviewer = "Reviewer Name", note = "Example"},
