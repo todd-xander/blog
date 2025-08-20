@@ -2,7 +2,7 @@
 title: "博客"
 translationKey: post
 sitemap:
-    changeFreq: "always"
+    changeFreq: "daily"
 ---
 
 This section demonstrates a list view layout.
@@ -15,3 +15,5 @@ This section has been set up with the following configuration:
     sitemap:
         changeFreq: "always"
     ---
+
+{{< randomlink text="✨ 随便看看" tip="随机阅读" place="right" >}}

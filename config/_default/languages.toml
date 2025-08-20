@@ -9,13 +9,13 @@
         pagerSize = 12
         path = 'page'
 
-[zh-Hans]
-    contentDir = 'content/zh-Hans'
+[zh-CN]
+    contentDir = 'content/zh-CN'
     disabled = false
     languageCode = 'zh-CN'
     languageDirection = 'ltr'
     languageName = '中文'
-    [zh-Hans.pagination]
+    [zh-CN.pagination]
         disableAliases = false
         pagerSize = 4
         path = 'page'

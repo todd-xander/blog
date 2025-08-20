@@ -1,10 +1,19 @@
 {{- $text := .Get "text" }}
 {{- $tip := .Get "tip" }}
 {{- $pre := .Get "pre" }}
-<a id="randomBtn" href="#" style="position: relative; display: inline-flex; align-items: center; gap: var(--smallskip); text-decoration: none; color: inherit;">
-  {{- if $pre }}<i class="icon sri">{{ $pre }}</i>{{- end }}
-  {{ $text | default "Feeling lucky" }}
-  <span class="t" role="tooltip" style="--tsf: 0; width: -webkit-fill-available;">{{ or $tip $text | default "Feeling lucky" }}</span>
+
+<a id="randomBtn"
+   href="#"
+   style="position: relative;
+          display: flex;
+          width: fit-content;
+          align-items: center;
+          gap: var(--tiny);
+          color: inherit;"
+>
+    {{- if $pre }}<i class="icon sri">{{ $pre }}</i>{{- end }}
+    {{ $text | default "Feeling lucky" }}
+    <span class="t" role="tooltip" style="--tsf: 0; width: -webkit-fill-available;">{{ or $tip $text | default "Feeling lucky" }}</span>
 </a>
 <script>
 (function(){

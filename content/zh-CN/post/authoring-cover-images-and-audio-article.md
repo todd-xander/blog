@@ -82,3 +82,6 @@ Here's how your folder structure should look:
             ├── cover.jpg
             ├── audio.mp3
             └── audio.ogg
+
+
+{{< randomlink text="✨ 随便看看" tip="随机阅读">}}
