@@ -36,10 +36,6 @@ h5, h6 {
     font-variant-caps: unset;
 }
 
-h6 {
-    padding: 0.9em .5em 0 0;
-}
-
 code, pre>code {
     font-family: var(--tt), LXGW Bright Code, monospace;
 }
@@ -160,15 +156,26 @@ div+#menu-footer, .column>div+div, .column__item+.column__item {
     max-width: calc(100% - var(--indent));
 }
 
+figure.fullwidth img {
+    width: 100%;
+    max-width: 100%;
+}
+
 #content .marginpar img {
     max-width: 100%;
 }
 
 #content > .highlight,
 #content > pre,
-#content > table
+#content > table,
+#content > dl,
+#content > hr
 {
     width: var(--golden-ratio);
+}
+
+.footnotes hr {
+    width: 100%;
 }
 
 #has-stage {
@@ -281,14 +288,30 @@ body.focus .giscus {
 }
 
 @media print {
+    body {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    #main-footer a::after, #content a::after {
+        content: ' ';
+    }
+
     .marginpar {
-        right: 0;
         width: var(--marginparwidth);
     }
 
     .marginpar.abs {
         right: 0;
         width: var(--marginparwidth);
+    }
+
+    .marginpar-ctrl, .marginpar-ctrl+label::before {
+        display: none;
+    }
+
+    .randomBtn {
+        display: none !important;
     }
 
     #contentinfo {
@@ -303,6 +326,14 @@ body.focus .giscus {
 
     #colophon>div {
         display: flex;
+        align-items: flex-start;
+    }
+
+    #colophon .verbose {
+        font-size: 1em;
+        display: flex;
+        flex-direction: column;
+        
     }
 
     #qr {
@@ -313,17 +344,21 @@ body.focus .giscus {
         display: none;
     }
 
-    #has-timeline .has-aria-label-top {
-        margin: 5pt 10pt 0;
-        display: inline-table;
+    #has-timeline ol {
+        border-left: 2.5pt solid var(--g18s);
     }
- 
+
     #has-timeline>p {
         display: none;
     }
 
-    .has-details ol {
+    #has-timeline.has-details ol {
         column-width: inherit;
+    }
+
+    #has-timeline .has-aria-label-top:before, #has-timeline .has-aria-label:after {
+        display: inline-block;
+        margin-right: 1ch;
     }
 
     #main-footer a::after {
