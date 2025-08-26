@@ -2,7 +2,7 @@
 title: "博客"
 translationKey: post
 sitemap:
-    changeFreq: "daily"
+    changeFreq: "always"
 ---
 
 This section demonstrates a list view layout.

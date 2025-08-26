@@ -1,6 +1,5 @@
 ---
-title: '长青'
+title: 'evergreen'
 weight: 2
 translationKey: evergreen
-emoji: '🌳'
 ---

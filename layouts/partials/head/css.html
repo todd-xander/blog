@@ -65,11 +65,12 @@
     (resources.Get "css/layout/_default/list.css")
     (resources.Get "css/component/card.css")
     (resources.Get "css/component/carousel.css")
-    (resources.Get "css/component/hero.css") 
+    (resources.Get "css/component/hero.css")
     (resources.Get "css/layout/_default/single.css")
     (resources.Get "css/component/marginpar.css")
     (resources.Get "css/optimize.css")
     (resources.Get "css/support.css")
+    (resources.Get "css/verbatim.css")
 }}
 
 {{- $baseFonts := slice $icon $openDyslexic }}
@@ -86,6 +87,11 @@
     {{- $extrasSty = $extrasSty | append $search }}
 {{- end }}
 
+{{- $garden := resources.Get "css/component/garden.css" }}
+{{- if index site.Taxonomies "stage" }}
+    {{- $extrasSty = $extrasSty | append $garden }}
+{{- end }}
+
 {{- if not site.Params.DisableFootBar }}
     {{- $bbar := resources.Get "css/component/mainfooter.css" }}
     {{- $extrasSty = $extrasSty | append $bbar }}
@@ -93,9 +99,8 @@
 
 {{ $zen := or site.Params.BearMode site.Params.ZenMode }}
 {{- if not $zen }}
-    {{- $clock := resources.Get "css/component/clock.css" }}
     {{- $contentinfo := resources.Get "css/component/contentinfo.css" }}
-    {{- $extrasSty = $extrasSty | append $contentinfo $clock }}
+    {{- $extrasSty = $extrasSty | append $contentinfo }}
     {{- if site.Params.posts.share }}
         {{- $share := resources.Get "css/component/share.css" }}
         {{- $extrasSty = $extrasSty | append $share }}
@@ -140,7 +145,7 @@
     </style>
 {{- end }}
 
-{{- define "partials/head/css/verbatim.html" }}
+{{/*  {{- define "partials/head/css/verbatim.html" }}
     {{ "<!-- css/verbatim.html -->" | safeHTML }}
     {{- $verbatimSty := resources.Get "css/verbatim.css" | minify }}
     {{- if eq hugo.Environment "development" }}
@@ -150,4 +155,4 @@
             <link href="{{ $verbatimSty.Permalink }}" rel="stylesheet" type="text/css" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
         {{- end }}
     {{- end }}
-{{- end }}
+{{- end }}  */}}

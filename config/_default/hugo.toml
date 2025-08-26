@@ -199,6 +199,8 @@ enableRobotsTXT = true
         related = true
         ## Show share buttons
         share = true
+        ## enable section numbering
+        secnum = false
 
     ## Search configuration
     [params.search]

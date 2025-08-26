@@ -1,5 +1,4 @@
 ---
-title: '萌芽'
+title: 'budding'
 translationKey: budding
-emoji: '🌼'
 ---

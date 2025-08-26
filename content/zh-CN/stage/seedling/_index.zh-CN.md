@@ -1,6 +1,5 @@
 ---
-title: '播种'
+title: 'seedling'
 weight: 1
 translationKey: seedling
-emoji: '🌱'
 ---
