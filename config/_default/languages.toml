@@ -19,10 +19,3 @@
         disableAliases = false
         pagerSize = 4
         path = 'page'
-
-[it]
-    contentDir = 'content/it'
-    disabled = false
-    languageCode = 'it-IT'
-    languageDirection = 'ltr'
-    languageName = 'Italian'

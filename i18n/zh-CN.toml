@@ -175,8 +175,8 @@
 [optimizeSRDesc]
     other = "为使用触屏设备的屏幕阅读器用户优化显示和资源。"
 [pages]
-    one = "§"
-    other = "§"
+    one = "页"
+    other = "页"
 [pagination]
     other = "分页"
 [posts]
@@ -223,7 +223,7 @@
 [selectLang]
     other = "语言选择"
 [series]
-    other = "系列"
+    other = "合集"
 [share]
     other = "分享"
 [shareOn]

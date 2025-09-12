@@ -57,16 +57,85 @@ code, pre>code {
     font-family: var(--tt), LXGW Bright Code, monospace;
 }
 
-
 :lang(zh-CN) .letterine>i {
     line-height: 4rem;
     font-size: 3em;
+}
+
+#background-header {
+    box-shadow: 0 2px 4px rgba(128, 128, 128, 5%);
+}
+
+#background-footer {
+    box-shadow: 0 -2px 4px rgba(128, 128, 128, 5%);
+}
+
+header time {
+    font-size: var(--small);
 }
 
 .carousel__viewport__slide .feed-item .par {
     --grd: linear-gradient(var(--off) 75%, transparent 100%);
     max-height: 12rem;
     padding-bottom: 1rem;
+}
+
+.feed-item>footer, .feed-item>hgroup>div {
+    position: relative;
+    z-index: 9999;
+}
+
+main#taxonomy .carousel__viewport {
+    flex-flow: wrap;
+}
+
+#list-tags  ul li a::after {
+    content: attr(data-post-counter);
+    font-family: var(--tt), monospace;
+    border-radius: 2px 50% 50% 2px;
+    margin-right: -10px;
+    background: var(--bg);
+    padding: 0 0.5rem;
+    margin-left: 0.5rem;
+}
+
+#taxonomy ul.carousel__viewport a::after {
+    position: absolute;
+    font-family: var(--tt), monospace;
+    right: 1ex;
+    bottom: 1ex;
+    border-radius: 0.7ex;
+    background: var(--bg);
+    padding: 0.7ex 0;
+    width: calc(3.2rem - 2ex);
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    content: attr(data-post-counter);
+}
+
+#has-share ul {
+    gap: 2px;
+}
+
+#has-share ul li i.mastodon,
+#has-share ul li i.telegram,
+#has-share ul li i.bluesky,
+#has-share ul li i.facebook,
+#has-share ul li i.linkedin,
+#has-share ul li i.reddit,
+#has-share ul li i.twitter {
+    color: var(--mid);
+}
+
+#has-share ul li:has(.email),
+#has-share ul li:has(.whatsapp),
+#has-share ul li:has(.hackernews),
+#has-share ul li:has(.tumblr),
+#has-share ul li:has(.pinterest),
+#has-share ul li:has(.vk),
+#has-share ul li:has(.xing) {
+    display: none;
 }
 
 .chroma .lntd:first-child {
@@ -114,6 +183,11 @@ code, pre>code {
 
 #series::before {
     content: "\a7";
+    content: attr(aria-label);
+}
+
+#series > span {
+    display: none;
 }
 
 ul.inline::before {
@@ -247,7 +321,7 @@ figure.fullwidth img {
 }
 
 #colophon>div {
-    align-items: center;
+    align-items: flex-start;
 }
 
 #qr {
@@ -261,10 +335,6 @@ figure.fullwidth img {
     font: var(--sf), sans-serif;
     font-size: 0.85em;
     user-select: none;
-}
-
-#has-share {
-    display: none;
 }
 
 .form__input {

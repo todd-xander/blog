@@ -16,13 +16,6 @@
   pageRef    = '/author/xander-zhang'
   weight     = 4
 
-[[main]]
-  name       = ''
-  identifier = 'github'
-  url        = 'https://github.com/todd-xander/'
-  weight     = 5
-  pre        = 'github'
-
 [[xander-zhang]]
   identifier = 'github'
   url        = 'https://github.com/todd-xander/'
