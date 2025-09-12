@@ -138,6 +138,10 @@ main#taxonomy .carousel__viewport {
     display: none;
 }
 
+.form.on-plank, .pagefind-ui {
+    width: var(--max-width);
+}
+
 .chroma .lntd:first-child {
     background-color: var(--bg);
     position: sticky;
