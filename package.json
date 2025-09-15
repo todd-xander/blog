@@ -4,7 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "build": "hugo",
+        "build": "hugo && npx pagefind --source \"public\"",
         "create": "hugo new",
         "serve": "hugo server",
         "start": "serve ./public"
